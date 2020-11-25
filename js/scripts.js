@@ -40,3 +40,8 @@ Player.prototype.hold = function() {
   $(".hold").hide();
   $(".roll").hide();
 }
+
+Player.prototype.addToTurnScore = function(amount) {
+  this.turnScore += amount;  
+  console.log("turnScore =" + this.turnScore)
+}
