@@ -52,3 +52,19 @@ Player.prototype.addToTotalScore = function(amount) {
   console.log("totalScore =" + this.totalScore)
   console.log("2turnScore =" + this.turnScore)
 }
+
+
+Player.prototype.turn = function() {
+  alert("Choose to roll or to hold")
+  $(".hold").show();
+  $(".roll").show();
+  $(".roll").click(function(){
+    currentPlayer.roll();
+  }); 
+
+  $(".hold").click(function(){
+    currentPlayer.hold();
+  }); 
+
+  
+}
