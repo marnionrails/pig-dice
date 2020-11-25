@@ -24,3 +24,19 @@ Player.prototype.choice = function (){
   $(".hold").show();
   $(".roll").show();
 }
+
+Player.prototype.roll = function() {
+  let dice = Math.floor((Math.random() * 6) + 1);  
+  console.log("dice =" + dice)
+  currentPlayer.addToTurnScore(dice);
+  currentPlayer.choice();
+}
+
+Player.prototype.hold = function() {
+  this.addToTotalScore(this.turnScore);  
+  currentPlayer.switchPlayer();
+  console.log("currentPlayer =" + currentPlayer.name);
+
+  $(".hold").hide();
+  $(".roll").hide();
+}
