@@ -68,3 +68,16 @@ Player.prototype.turn = function() {
 
   
 }
+
+Player.prototype.switchPlayer = function() {
+  if(currentPlayer === playerOne) {
+      currentPlayer = playerTwo;
+  }
+  else {
+    currentPlayer = playerOne;
+    alert(currentPlayer.name + ", its your turn now");
+  }
+  console.log("2currentPlayer =" + currentPlayer.name)
+  return currentPlayer;
+  
+}
