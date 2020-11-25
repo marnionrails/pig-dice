@@ -45,3 +45,10 @@ Player.prototype.addToTurnScore = function(amount) {
   this.turnScore += amount;  
   console.log("turnScore =" + this.turnScore)
 }
+
+Player.prototype.addToTotalScore = function(amount) {
+  this.totalScore += amount;
+  this.turnScore = 0;
+  console.log("totalScore =" + this.totalScore)
+  console.log("2turnScore =" + this.turnScore)
+}
