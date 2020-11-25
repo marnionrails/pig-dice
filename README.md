@@ -21,7 +21,7 @@ This game will have two players, each rolling a dice and choosing to roll again 
 * HTML/CSS
 * Bootstrap
 * JavaScript
-* Jquery
+* jQuery
 * Markdown
 
 ### License
