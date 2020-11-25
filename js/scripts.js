@@ -4,11 +4,11 @@ function Player(name) {
   this.totalScore = 0;
 }
 
-/* let playerOne;
+let playerOne;
 let playerTwo;
 let currentPlayer;
 
-$(document).ready(function(event) {
+/* $(document).ready(function(event) {
     // event.preventDefault();
     playerOne = new Player(prompt("Player one, please enter your name:"));
     playerTwo = new Player(prompt("Player two, please enter your name:"));
