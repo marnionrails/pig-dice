@@ -19,3 +19,8 @@ let currentPlayer;
     currentPlayer.turn();
 
 }); 
+
+Player.prototype.choice = function (){
+  $(".hold").show();
+  $(".roll").show();
+}
